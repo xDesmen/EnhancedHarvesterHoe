@@ -30,6 +30,12 @@ public class Core extends JavaPlugin
     {
         reference = new Reference();
 
+        if (!getDataFolder().exists()) {
+            getDataFolder().mkdirs();
+            createConfig();
+            saveDefaultConfig();
+        }
+
         Configuration config = getConfig();
         reference.setMaterial(Material.valueOf(config.getString("item.material")));
         reference.setName(chatColor(config.getString("item.name")));
@@ -40,9 +46,6 @@ public class Core extends JavaPlugin
         getCommand("HarvesterHoe").setExecutor(new ComHarvesterHoe(this));
         getServer().getPluginManager().registerEvents(new Events(this), this);
 
-        if (!getDataFolder().exists()) {
-            getDataFolder().mkdirs();
-        }
     }
 
     public static String chatColor(String message) {
@@ -53,6 +56,7 @@ public class Core extends JavaPlugin
         try {
             if (!getDataFolder().exists()) {
                 getDataFolder().mkdirs();
+                saveDefaultConfig();
             }
             File file = new File(getDataFolder(), "config.yml");
             if (!file.exists()) {

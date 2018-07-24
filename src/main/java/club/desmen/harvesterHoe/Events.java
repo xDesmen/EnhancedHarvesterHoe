@@ -23,9 +23,11 @@ public class Events implements Listener
 {
 
     private Reference reference;
+    private static Core plugin;
 
     public Events(Core core)
     {
+        this.plugin = plugin;
         this.reference = core.getReference();
     }
 

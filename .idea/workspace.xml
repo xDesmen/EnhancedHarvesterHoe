@@ -7,16 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7138306-d46e-452d-932f-6411bfa58734" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/EnhancedHarvesterHoe.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Core.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Events.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Events.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Reference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Reference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/commands/ComHarvesterHoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/commands/ComHarvesterHoe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="161">
+              <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -68,8 +62,8 @@
       <file leaf-file-name="Core.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Core.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="37" column="64" lean-forward="true" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+            <state relative-caret-position="203">
+              <caret line="51" column="51" lean-forward="true" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,18 +74,19 @@
       <file leaf-file-name="Events.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Events.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="552">
+              <caret line="54" column="51" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Reference.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Reference.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Reference.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="185">
               <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
+                <element signature="method#setLore#0;class#Reference#0" />
                 <element signature="e#898#906#0" expanded="true" />
                 <element signature="e#1111#1112#0" expanded="true" />
                 <element signature="e#1144#1145#0" expanded="true" />
@@ -123,11 +118,11 @@
         <option value="$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/listeners/BlockBreak.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/ComHarvesterHoe.java" />
         <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
         <option value="$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/commands/ComHarvesterHoe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Events.java" />
-        <option value="$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Core.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Reference.java" />
+        <option value="$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Core.java" />
+        <option value="$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Events.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
       </list>
     </option>
   </component>
@@ -374,6 +369,7 @@
         <state relative-caret-position="322">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
+            <element signature="method#setLore#0;class#Reference#0" />
             <element signature="e#898#906#0" expanded="true" />
             <element signature="e#1111#1112#0" expanded="true" />
             <element signature="e#1144#1145#0" expanded="true" />
@@ -422,13 +418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/commands/ComHarvesterHoe.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -436,34 +425,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Core.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="37" column="64" lean-forward="true" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Events.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Reference.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="185">
           <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
           <folding>
+            <element signature="method#setLore#0;class#Reference#0" />
             <element signature="e#898#906#0" expanded="true" />
             <element signature="e#1111#1112#0" expanded="true" />
             <element signature="e#1144#1145#0" expanded="true" />
             <element signature="e#1200#1201#0" expanded="true" />
             <element signature="e#1244#1245#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Events.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="54" column="51" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/desmen/harvesterHoe/Core.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="51" column="51" lean-forward="true" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
