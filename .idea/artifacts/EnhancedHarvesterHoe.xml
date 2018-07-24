@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="EnhancedHarvesterHoe">
+    <output-path>$PROJECT_DIR$/../../Output</output-path>
+    <root id="archive" name="EnhancedHarvesterHoe.jar">
+      <element id="module-output" name="EnhancedHarvesterHoe" />
+    </root>
+  </artifact>
+</component>

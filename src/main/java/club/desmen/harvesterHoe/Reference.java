@@ -7,15 +7,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Bladian. Before using the code, kindly ask permission to him via the following methods.
- * <p>
- * Twitter: BladianMC
- * Discord: Bladian#6411
- * <p>
- * Thank you for reading!
- */
-
 
 public class Reference
 {
@@ -51,9 +42,14 @@ public class Reference
         return lore;
     }
 
-    public void setLore(List<String> lore)
-    {
-        this.lore = lore;
+    public void setLore(List<String> lore) {
+        ArrayList<String> loreList = new ArrayList<String>();
+        {
+            for (String lorelist : lore) {
+                loreList.add(lorelist.replaceAll("(&([a-fk-o0-9]))", "\u00A7$2"));
+            }
+        }
+        this.lore = loreList;
     }
 
     public String getPermission()

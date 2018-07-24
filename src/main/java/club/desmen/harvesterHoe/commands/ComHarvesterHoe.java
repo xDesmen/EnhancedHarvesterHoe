@@ -8,14 +8,6 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-/**
- * Created by Bladian. Before using the code, kindly ask permission to him via the following methods.
- * <p>
- * Twitter: BladianMC
- * Discord: Bladian#6411
- * <p>
- * Thank you for reading!
- */
 
 
 public class ComHarvesterHoe implements CommandExecutor
@@ -37,17 +29,17 @@ public class ComHarvesterHoe implements CommandExecutor
             {
                 if(strings.length == 0)
                 {
-                    commandSender.sendMessage("§c/harvesterhoe <player>");
+                    commandSender.sendMessage(Core.chatColor("&c/harvesterhoe <player>"));
                     return true;
                 }
                 Player t = Bukkit.getPlayer(strings[0]);
                 if(t == null)
                 {
-                    commandSender.sendMessage("§cPlayer isn't online");
+                    commandSender.sendMessage(Core.chatColor("&cPlayer isn't online"));
                     return true;
                 }
                 t.getInventory().addItem(reference.getItemStack());
-                commandSender.sendMessage("§aGave " + t.getName() + " a harvester hoe");
+                commandSender.sendMessage(Core.chatColor("&aGave " + t.getName() + " a harvester hoe"));
             }
         }
         return false;

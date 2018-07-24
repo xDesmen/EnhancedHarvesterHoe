@@ -1,5 +1,6 @@
 package club.desmen.harvesterHoe;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -16,14 +17,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
 
-/**
- * Created by Bladian. Before using the code, kindly ask permission to him via the following methods.
- * <p>
- * Twitter: BladianMC
- * Discord: Bladian#6411
- * <p>
- * Thank you for reading!
- */
 
 
 public class Events implements Listener
@@ -60,6 +53,7 @@ public class Events implements Listener
                                 listElement.setType(Material.AIR);
                             }
                             p.getInventory().addItem(new ItemStack(Material.SUGAR_CANE, blocks.size()));
+                            Bukkit.getServer().dispatchCommand(p, "sell sugarcane");
                         }
                     }
                 }
