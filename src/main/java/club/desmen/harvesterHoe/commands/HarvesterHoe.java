@@ -10,31 +10,26 @@ import org.bukkit.entity.Player;
 
 
 
-public class ComHarvesterHoe implements CommandExecutor
+public class HarvesterHoe implements CommandExecutor
 {
 
     private Reference reference;
 
-    public ComHarvesterHoe(Core core)
+    public HarvesterHoe(Core core)
     {
         this.reference = core.getReference();
     }
 
     @Override
-    public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings)
-    {
-        if(command.getName().equalsIgnoreCase("HarvesterHoe"))
-        {
-            if(commandSender.hasPermission(reference.getPermission()))
-            {
-                if(strings.length == 0)
-                {
+    public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
+        if(command.getName().equalsIgnoreCase("HarvesterHoe")) {
+            if(commandSender.hasPermission(reference.getPermission())) {
+                if(strings.length == 0) {
                     commandSender.sendMessage(Core.chatColor("&c/harvesterhoe <player>"));
                     return true;
                 }
                 Player t = Bukkit.getPlayer(strings[0]);
-                if(t == null)
-                {
+                if(t == null) {
                     commandSender.sendMessage(Core.chatColor("&cPlayer isn't online"));
                     return true;
                 }

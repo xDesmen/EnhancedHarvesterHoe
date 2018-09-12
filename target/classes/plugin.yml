@@ -2,5 +2,6 @@ main: club.desmen.harvesterHoe.Core
 name: EnhancedHarvesterHoes
 author: Desmen
 version: 1.0
+softdepend: [Factions]
 commands:
   harvesterhoe:

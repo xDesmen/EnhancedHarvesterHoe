@@ -2,10 +2,12 @@ item:
   material: 'DIAMOND_HOE'
   name: '&3Harvester Hoe'
   lore:
-    - '&ePuts sugancane directly into your inventory'
     - '&eGets all the sugarcane from the block you hit to the highest'
+    - '&ethan automatically sells it'
+    - '&bPurchasable @ &7store.example.com'
 
-permission: 'harvesterhoe.use'
+permission: 'harvesterhoe.admin'
+sugarcane-price: 20
 
 
 

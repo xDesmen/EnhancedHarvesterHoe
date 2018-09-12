@@ -8,12 +8,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Reference
-{
+public class Reference {
 
     private Material material = Material.DIAMOND_HOE;
     private String name = "§c§lHarvester Hoe";
     private List<String> lore = new ArrayList<>();
+    private int price = 20;
 
     private String permission = "harvesterhoe.use";
 
@@ -60,6 +60,14 @@ public class Reference
     public void setPermission(String permission)
     {
         this.permission = permission;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 
     public ItemStack getItemStack()

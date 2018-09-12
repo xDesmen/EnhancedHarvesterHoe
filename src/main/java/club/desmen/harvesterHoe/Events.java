@@ -1,5 +1,7 @@
 package club.desmen.harvesterHoe;
 
+import com.massivecraft.factions.FPlayer;
+import com.massivecraft.factions.FPlayers;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -12,6 +14,7 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.plugin.Plugin;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +30,7 @@ public class Events implements Listener
 
     public Events(Core core)
     {
-        this.plugin = plugin;
+        plugin = plugin;
         this.reference = core.getReference();
     }
 
@@ -36,26 +39,26 @@ public class Events implements Listener
     public void onInteract(BlockBreakEvent e)
     {
         Block block = e.getBlock();
-        if (block.getType() == Material.SUGAR_CANE_BLOCK)
-        {
+        if (block.getType() == Material.SUGAR_CANE_BLOCK) {
             Player p = e.getPlayer();
-            if (p.getItemInHand() != null && p.getItemInHand().getType() != Material.AIR)
-            {
+            if (p.getItemInHand() != null && p.getItemInHand().getType() != Material.AIR) {
                 ItemStack itemStack = p.getItemInHand();
-                if (itemStack.getType() == reference.getMaterial())
-                {
-                    if (itemStack.getItemMeta().getDisplayName() != null)
-                    {
-                        if (itemStack.getItemMeta().getDisplayName().equals(reference.getName()))
-                        {
-                            e.setCancelled(true);
-                            List<Block> blocks = getBlocksOfSC(block);
-                            for (ListIterator iterator = blocks.listIterator(blocks.size()); iterator.hasPrevious();) {
-                                final Block listElement = (Block) iterator.previous();
-                                listElement.setType(Material.AIR);
+                if (itemStack.getType() == reference.getMaterial()) {
+                    if (itemStack.getItemMeta().getDisplayName() != null) {
+                        if (itemStack.getItemMeta().getDisplayName().equals(reference.getName())) {
+                            Plugin factions = Bukkit.getServer().getPluginManager().getPlugin("Factions");
+                            if (factions != null && factions.isEnabled()) {
+                                FPlayer fPlayer = FPlayers.getInstance().getByPlayer(e.getPlayer());
+                                if (!fPlayer.isInOwnTerritory()) return;
+                                e.setCancelled(true);
+                                List<Block> blocks = getBlocksOfSC(block);
+                                for (ListIterator iterator = blocks.listIterator(blocks.size()); iterator.hasPrevious(); ) {
+                                    final Block listElement = (Block) iterator.previous();
+                                    listElement.setType(Material.AIR);
+                                }
+                                int price = reference.getPrice() * blocks.size();
+                                Core.getEconomy().depositPlayer(p, price);
                             }
-                            p.getInventory().addItem(new ItemStack(Material.SUGAR_CANE, blocks.size()));
-                            Bukkit.getServer().dispatchCommand(p, "sell sugarcane");
                         }
                     }
                 }
