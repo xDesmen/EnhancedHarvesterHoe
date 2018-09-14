@@ -50,6 +50,7 @@ public class Events implements Listener
                             if (factions != null && factions.isEnabled()) {
                                 FPlayer fPlayer = FPlayers.getInstance().getByPlayer(e.getPlayer());
                                 if (!fPlayer.isInOwnTerritory()) return;
+                            }
                                 e.setCancelled(true);
                                 List<Block> blocks = getBlocksOfSC(block);
                                 for (ListIterator iterator = blocks.listIterator(blocks.size()); iterator.hasPrevious(); ) {
@@ -64,7 +65,6 @@ public class Events implements Listener
                 }
             }
         }
-    }
 
 
     private List<Block> getBlocksOfSC(Block block)
